@@ -1,0 +1,414 @@
+
+body{
+    color:azure;
+    background:rgb(25, 25, 25);
+    min-height:100%;
+    position:relative;
+    margin:auto;
+}
+#miCanvas{
+    position: fixed; 
+    z-index: -100;
+    height: 100%;
+    width: 100%;
+
+
+}
+
+#btn-menu{
+    display:none;
+}
+ul{
+    float: left;
+    /* borrar si presenta errores*/ list-style-type: none;
+
+    /* A�ADIMOS */
+    position: relative; 
+    left: 50%;
+    margin:auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+
+}
+
+header{
+
+    height: 50px;
+    background: black;
+    color:#fff;
+    margin: 0 auto;
+
+    justify-content: flex-end;
+}
+header label{
+    font-size: 30px;
+    cursor: pointer;
+    display:none;
+}
+.menu ul{
+    background: black;
+    display:flex;
+    list-style: none;
+}
+.menu ul ul{
+    display:none;
+}
+.menu a{
+    display:block;
+    padding:15px 20px;
+    color:#fff;
+    text-decoration: none;
+}
+.menu a:hover{
+    background: crimson;
+}
+.menu a span{
+    margin-left: 10px;
+}
+.menu ul li:hover ul{
+    display: block;
+    position: absolute;
+}
+.menu ul li:hover ul{
+    display: block;
+    position: absolute;
+}
+
+input:hover{
+    background:lightcyan;
+}
+
+#se{
+    margin:10px;
+    position: relative;
+    top:-490px;
+}
+#sub{
+    margin-right: 5px;
+    position: relative;
+    top:-490px;
+}
+#card{
+    width: 200px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+}
+#a�o{
+    width: 40px;
+}
+#cvv{
+    margin-left: 50px;
+    width: 40px;
+}
+#mes{
+    width: 40px;
+}
+.c{
+    margin-top: 2px;
+}
+
+li{
+    float: left;
+    /* A�ADIMOS */
+    position: relative; 
+    right: 50%;
+}
+#contenido{
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+}
+
+
+figure{
+    margin-left: 250px;
+    margin-top:-80px;
+}
+img{
+    margin-left: 60px;
+    margin-top: 120px;
+}
+
+
+
+#tab{
+
+
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top:80px;
+    display:block;
+}
+
+.mf:hover{
+    background: crimson;
+    cursor: cell
+}
+
+
+#sc{
+    display: none;
+}
+#portada{
+    height: 100px;
+    width: 100%;
+
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+.desc{
+    margin-left: 60px;
+    margin-top: 10px;
+    display: block;
+
+}
+#a1{
+
+    position: relative;
+    top:-890px;
+
+    left:310px;
+}
+#a2{
+
+    position: relative;
+    top:-890px;
+    margin-left: 61px;
+    left:310px;
+}
+#a3{
+    position: relative;
+    top:-600px;
+    left:-360px;
+}
+#a4{
+    position: relative;
+    top:-600px;
+    margin-left: 61px;
+    left:-360px;
+}
+#a5{
+    position: relative;
+    top:-340px;
+    left:310px;
+}
+#a6{
+    position: relative;
+    top:-340px;
+    margin-left: 61px;
+    left:310px;
+}
+#a7{
+    position: relative;
+    top:-45px;
+    left:-360px;
+}
+#a8{
+    position: relative;
+    top:-45px;
+    margin-left: 61px;
+    left:-360px;
+}
+
+
+
+#btngm:hover {
+
+    padding:10px 5px;
+    color:#fff;
+    text-decoration: none;
+    background: crimson;
+
+
+}
+#btngm{
+    text-align: center; 
+    background: black;
+}
+#btngm1{
+
+
+    text-align: center; 
+    background: black;
+}
+#btngmu{
+
+
+    text-align: center; 
+    background: black;
+}
+#btngmu:hover {
+
+    padding:10px 5px;
+    color:#fff;
+    text-decoration: none;
+    background: crimson;
+}
+#btngm1:hover {
+
+    padding:10px 5px;
+    color:#fff;
+    text-decoration: none;
+    background: crimson;
+}
+
+#tab2{
+
+    top:40px;
+    width: 850px;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    position: relative;
+    border-color: crimson;
+    cursor: pointer;
+}
+#btnus1{
+    text-align: center; 
+
+    background: black;
+    border: 0;
+    color: white;
+    height: 30px;
+    width: 100px;
+    text-decoration: underline;
+
+}
+#us1:hover{
+
+    padding:10px 5px;
+    color:#fff;
+    text-decoration: none;
+    background: black; 
+    cursor: pointer;
+}
+#us1{
+
+    text-align: center; 
+    text-decoration: underline;
+}
+#us2{
+    font-weight: bold;
+    opacity:0.5;
+    text-align: center; 
+    background: #201f1f;
+}
+
+#us2:hover{
+    padding:10px 5px;
+    color:#fff;
+    text-decoration: none;
+    background: crimson;
+    cursor: pointer;
+
+}
+#btncs{
+    text-align: center; 
+
+    background: black;
+    border: 0;
+    color: white;
+    height: 30px;
+    width: 70px;
+    text-decoration: underline;
+
+}
+#bot{
+    width: 180px;
+}
+#c5{
+    width: 280px;
+    color:red;
+    background: #030202;
+    border:0px;
+}
+
+#bm{
+    width: 100px;
+}
+#fileUp-input:hover{
+    background: crimson;
+    width: 350px;
+    height: 20px;
+}
+#c6{
+    width: 280px;
+    height: 30px;
+    color:red;
+    background: #030202;
+    border:0px;
+}
+#in6{
+    display:none;
+}
+#c9{
+    width: 280px;
+    height: 30px;
+    color:red;
+    background: #030202;
+    border:0px;
+}
+#in1{
+    display: none;
+}
+#in8{
+    display: none;
+}
+
+.container{
+
+    margin: auto;
+    font-family: Arial;
+    padding: 20px;
+
+
+}
+
+
+.ventana{
+    width: 100%;
+    height:100%;
+    color: #FFF;
+    position: absolute;
+    background-image: url(../img/bg-modal.png);
+    display:none;
+    top: 0;
+    left: 0;
+
+
+}
+
+
+.form{
+    width: 300px;
+    height: 1000px;
+    padding: 25px;
+    background-image: url(../img/bg-modal.png);
+    color: #666;
+    top: 10%;
+    left: 50%;
+    position: absolute;
+    margin-left: -175px;
+    margin-top: -175px;
+
+}
+
+.cerrar{
+    font-weight: 900;
+    text-align: right;
+}
+.cerrar a{
+    color: red;
+}
+#mg,#mp{
+    width: 80px;
+}

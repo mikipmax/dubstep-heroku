@@ -1,0 +1,44 @@
+
+<html lang="es">
+    <meta charset="utf-8">
+    <head>
+        <title></title>
+        <script>
+            window.addEventListener("load", function () {
+                document.querySelector("#btnnomb").addEventListener("click", function () {
+                    document.querySelector("#nomb").disabled = true;
+                });
+                document.querySelector("#btnnomb1").addEventListener("click", function () {
+                    document.querySelector("#nomb1").disabled = true;
+                });
+                document.querySelector("#btnnomb2").addEventListener("click", function () {
+                    document.querySelector("#nomb2").disabled = true;
+                });
+                document.querySelector("#btnnomb3").addEventListener("click", function () {
+                    document.querySelector("#nomb3").disabled = true;
+                });
+                document.querySelector("#btnnomb4").addEventListener("click", function () {
+                    document.querySelector("#nomb4").disabled = true;
+                });
+                document.querySelector("#acept").addEventListener("click", function () {
+                    window.location = "../index1.html";
+                });
+            });
+        </script>
+    </head>
+    <body>
+
+        <form>
+
+            <h1>Gestionamiento de cuenta</h1>
+            <label>Nombres: </label>
+            <input type="text" value="Mick Fred " id="nomb"><input type="button" id="btnnomb" value="Guardar Cambios">	
+            <br><label>Apellido: </label><input type="text" value=" Cevallos " id="nomb1"><input type="button" id="btnnomb1" value="Guardar Cambios">
+            <br><label>Correo: </label><input type="text" value=" pmax-110@hotmail.com " id="nomb2"><input type="button" id="btnnomb2" value="Guardar Cambios">
+            <br><label>Fecha de Nacimiento: </label><input type="date" value="1996-07-21" id="nomb3"><input type="button" id="btnnomb3" value="Guardar Cambios">
+            <br><label>Password: </label><input type="password"  id="nomb4" value="user"><input type="button" id="btnnomb4" value="Guardar Cambios">
+            <br><input type="button" id="acept" value="Listo ">
+            </form>
+            </body>
+            </html>
+

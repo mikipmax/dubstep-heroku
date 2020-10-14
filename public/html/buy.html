@@ -1,0 +1,94 @@
+﻿ <html lang="es">
+    <meta charset="utf-8">
+    <head>
+        <title>Management of electronic music</title>
+        <link rel="stylesheet" type="text/css" href="../css/style1.css"/>
+        <script>
+
+            window.addEventListener("load", function () {
+                document.querySelector("#mes").disabled = true;
+                document.querySelector("#año").disabled =
+                        document.querySelector("#cvv").disabled =
+                        document.querySelector("#nom").disabled =
+                        document.querySelector("#appe").disabled =
+                        document.querySelector("#btnc").disabled =
+                        document.querySelector("#btnm").disabled =
+                        true;
+                document.querySelector("#tc").addEventListener("keyup", function () {
+
+                    if (document.querySelector("#tc").value !== null) {
+                        document.querySelector("#mes").disabled = false;
+                    }
+                });
+                document.querySelector("#mes").addEventListener("click", function () {
+
+                    if (document.querySelector("#mes").value !== null) {
+                        document.querySelector("#año").disabled = false;
+                    }
+                });
+                document.querySelector("#año").addEventListener("click", function () {
+
+                    if (document.querySelector("#año").value !== null) {
+                        document.querySelector("#cvv").disabled = false;
+                    }
+                });
+                document.querySelector("#cvv").addEventListener("click", function () {
+
+                    if (document.querySelector("#cvv").value !== null) {
+                        document.querySelector("#nom").disabled = false;
+                    }
+                });
+                document.querySelector("#nom").addEventListener("keyup", function () {
+
+                    if (document.querySelector("#nom").value !== null) {
+                        document.querySelector("#appe").disabled = false;
+                    }
+                });
+                document.querySelector("#appe").addEventListener("keyup", function () {
+
+                    if (document.querySelector("#appe").value !== null) {
+                        document.querySelector("#btnc").disabled = false;
+                    }
+                });
+
+                document.querySelector("#btnc").addEventListener("click", function () {
+                    document.querySelector("#btnm").value = "Su compra se ha realizado con  éxito, le enviaremos en breves minutos a su correo el link de descarga,Gracias por su compra :D";
+                });
+
+
+
+            });
+
+        </script>
+    </head>
+
+
+    <body>
+        <img src="../img/Skrillex.jpg" id="portada">
+        <canvas id="miCanvas" ></canvas>
+        <form id="cards">
+            <figure>
+                <img src="../img/card.jpg" id="card">
+            </figure>
+            <center> <label>Número de tarjeta</label>
+                <br><input type="tel" id="tc" required><br>
+                <br><label>Fecha de Caducidad</label> <label>Código de Seguridad</label><br><input placeholder="MM" type="number" id="mes">
+                <input type="number" id="año" placeholder="AA">
+                <input type="number" id="cvv" placeholder="CVV">
+                <br><br><label>Nombre del titular de la tarjeta</label>
+                <br><input type="text" id="nom">
+                <input type="text" id="appe">
+
+                <br><br><label>Este pago se procesará como Invitado de Skrill <br>y está sujeto a la </label>
+                <a href="https://www.skrill.com/es/siteinformation/politica-de-privacidad/" target="_blank">
+                    <label>Política de privacidad de Skrill</label></a> 
+                <br><br><input type="button" value="Comprar" id="btnc" >
+                <br><br><input type="text" value="" id="btnm">
+                </form>
+
+
+
+
+
+                </body>
+                </html>

@@ -1,0 +1,52 @@
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>title</title>
+        <script>
+            
+            
+            
+            window.addEventListener("load", function () {
+                
+                document.querySelector("#login").addEventListener("click", function () {
+                    
+                    var usuario = document.querySelector('#user').value;
+                    var contra = document.querySelector('#password').value;
+                    var admin = "mikipmax";
+                    var passwda = "admin";
+                    var user1 = "mickfred";
+                    var passwd1 = "user";
+                    
+                    
+                    
+                    
+                    if (usuario === admin && contra === passwda) {
+                        window.location = "../index2.html";
+                    } 
+                    
+                    if (usuario === user1 && contra === passwd1) {
+                        window.location="../index1.html";
+                    }
+         
+                });
+                document.querySelector("#cancelar").addEventListener("click", function () {
+                    window.location = "../index.html";
+                });
+            });
+            
+            
+        </script>
+    </head>
+    <body>
+
+
+        <div  style="margin-top: 50px ;" align="center">
+            <h1>Iniciar Sesión</h1></br>
+            <input type="text" id="user" name="user" placeholder="user"/></br>
+            <input type="password" id="password" name="password" placeholder="password" /></br></br>
+            <input type="button" value="Ingresar" id="login" name="login" />
+            <input type="button" value="Cancelar" id="cancelar" name="cancelar" />
+        </div>
+
+    </body>
+</html>

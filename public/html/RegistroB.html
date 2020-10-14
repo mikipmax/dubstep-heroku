@@ -1,0 +1,205 @@
+<html lang="es">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width,initial-scale=1">
+
+    <head>
+        <title>Registro: Management of electronic music</title>
+
+        <script src="../js/mainJq.js"></script>
+        <script src="../js/mainApi.js"></script>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <script>
+            window.addEventListener("load", function () {
+                document.querySelector("#ac").disabled = true;
+                document.querySelector("#txt2").disabled = true;
+                document.querySelector("#txt3").disabled = true;
+                document.querySelector("#txt4").disabled = true;
+                document.querySelector("#txt5").disabled = true;
+                document.querySelector("#txt6").disabled = true;
+                document.querySelector("#txt7").disabled = true;
+                document.querySelector("#abc").disabled = true;
+                document.querySelector("#txt1").addEventListener("keyup", function () {
+
+                    if (document.querySelector("#txt1").value !== null) {
+                        document.querySelector("#txt2").disabled = false;
+
+                    }
+                });
+                document.querySelector("#txt2").addEventListener("keyup", function () {
+                    if (document.querySelector("#txt2").value !== null) {
+                        document.querySelector("#txt3").disabled = false;
+
+                    }
+                });
+
+                document.querySelector("#txt3").addEventListener("click", function () {
+
+                    document.querySelector("#txt4").disabled = false;
+
+                });
+                document.querySelector("#txt4").addEventListener("keyup", function () {
+                    if (document.querySelector("#txt4").value !== null) {
+                        document.querySelector("#txt5").disabled = false;
+                    }
+                });
+                document.querySelector("#txt5").addEventListener("click", function () {
+
+                    document.querySelector("#txt6").disabled = false;
+
+                });
+                document.querySelector("#txt6").addEventListener("keyup", function () {
+                    if (document.querySelector("#txt6").value !== null) {
+                        document.querySelector("#txt7").disabled = false;
+                    }
+
+
+                });
+                document.querySelector("#txt7").addEventListener("click", function () {
+
+                    document.querySelector("#abc").disabled = false;
+                });
+            
+                document.querySelector("#ca").addEventListener("click", function () {
+                    window.location = "../index.html";
+                });
+            });
+
+        </script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery.js"></script> <!--Cambiar luego descargando el js ahhah-->
+    </head>
+
+    <body>
+<!--
+        <div class="container" style="margin-top:60px">
+            <button class="btn btn-info"
+                    data-toggle="modal" 
+                    data-target="#miventana">Abrir ventana</button>
+            <div class="modal fade" id="miventana" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+
+                        <div class="moda-header">
+                            <button type="button" class="close"
+                                    data-dismiss="modal"
+                                    aria-hidden="true">&times;</button>
+                            <h4>Registrarse</h4>
+                        </div>
+                        <div class="modal-body">
+                            añsjdfñasñdjflaksdflajsldfjalñsdjflaajsñflkajskldfjaslkdfjñasljdfalñsjdflñasjflasf
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+-->
+
+ <div class="container" style="margin-top:60px">
+            <button class="btn btn-info"
+                    data-toggle="modal" 
+                    data-target="#miventana">Abrir ventana</button>
+            <div class="modal fade" id="miventana" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+
+                        <div class="moda-header">
+                            <button type="button" class="close"
+                                    data-dismiss="modal"
+                                    aria-hidden="true">&times;</button>
+                            <h4>Registrarse</h4>
+                        </div>
+                        <div class="modal-body">
+                             <form name="miformulario"  action="login.html" >
+            <p><label>Ingrese sus nombres</label></p>
+            <input type="text" required id="txt1" name="v1" />
+            <p><label>Ingrese sus apellidos</label></p>
+            <input type ="text" required id="txt2" name="v2" />
+            <p><label>Ingrese su fecha de nacimiento</label></p>
+            <input type ="date" required id="txt3" ></input>
+            <p><label>Ingrese su edad</label></p>
+            <input type ="number" required id="txt4" name="v2" />
+            <p><label>Seleccione su Sexo</label></p>
+            <input type ="radio" required name="sexo" id="txt5">Masculino</input>
+            <input type ="radio" required name="sexo" id="txt5">Femenino</input>
+            <p><label>Ingrese su correo</label></p>
+            <input type ="email" required id="txt6"></input>
+            <p><label>Ingrese su pais</label></p>
+            <select name="" id="txt7">
+                <option value="Ecuador">Ecuador</option>
+                <option value="Mexico">Mexico</option>
+                <option value="Canada">Canada</option>
+                <option value="USA">USA</option>
+                <option value="España">España</option>
+                <option value="Chile">Chile</option>
+                <option value="Perú">Perpu</option>
+                <option value="Brazil">Brazil</option>
+                <option value="Paraguay">Paraguay</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Francia">Francia</option>
+            </select>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+            <link rel="stylesheet" href="../css/mainApi.css">
+
+            <p><input type="submit" id="abc" >
+                <br> <input type="button" id="ac" value="Aceptar"><br> <input type="button" id="ca" value="Cancelar">
+            <p>
+
+            <p> <h1>Facebook SDK login con Javascript</h1></p>
+    </form>
+<center><a href="../index.html"><input type="button" value="Atras" id="btnAtras"></input></a>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1>Registro de usuarios</h1>
+
+      <!--  <form name="miformulario"  action="login.html">
+            <p><label>Ingrese sus nombres</label></p>
+            <input type="text" required id="txt1" name="v1" />
+            <p><label>Ingrese sus apellidos</label></p>
+            <input type ="text" required id="txt2" name="v2" />
+            <p><label>Ingrese su fecha de nacimiento</label></p>
+            <input type ="date" required id="txt3" ></input>
+            <p><label>Ingrese su edad</label></p>
+            <input type ="number" required id="txt4" name="v2" />
+            <p><label>Seleccione su Sexo</label></p>
+            <input type ="radio" required name="sexo" id="txt5">Masculino</input>
+            <input type ="radio" required name="sexo" id="txt5">Femenino</input>
+            <p><label>Ingrese su correo</label></p>
+            <input type ="email" required id="txt6"></input>
+            <p><label>Ingrese su pais</label></p>
+            <select name="" id="txt7">
+                <option value="Ecuador">Ecuador</option>
+                <option value="Mexico">Mexico</option>
+                <option value="Canada">Canada</option>
+                <option value="USA">USA</option>
+                <option value="España">España</option>
+                <option value="Chile">Chile</option>
+                <option value="Perú">Perpu</option>
+                <option value="Brazil">Brazil</option>
+                <option value="Paraguay">Paraguay</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Francia">Francia</option>
+            </select>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+            <link rel="stylesheet" href="../css/mainApi.css">
+
+            <p><input type="submit" id="abc" >
+                <br> <input type="button" id="ac" value="Aceptar"><br> <input type="button" id="ca" value="Cancelar">
+            <p>
+
+            <p> <h1>Facebook SDK login con Javascript</h1></p>
+    </form>
+<center><a href="../index.html"><input type="button" value="Atras" id="btnAtras"></input></a>
+      -->
+</body>
+</html>
